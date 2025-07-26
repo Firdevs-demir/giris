@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Capriola&display=swap');
 
 body {
+  font-family: 'Capriola', sans-serif;
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  color: white;
   margin: 0;
   padding: 0;
-  font-family: 'Capriola', sans-serif;
-  background: linear-gradient(to right, #2b5876, #4e4376);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -12,47 +13,60 @@ body {
 }
 
 .login-container {
-  background-color: white;
+  background-color: rgba(0, 0, 0, 0.6);
   padding: 40px;
-  border-radius: 16px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
-  width: 320px;
-}
-
-.login-container h2 {
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.4);
+  width: 300px;
   text-align: center;
-  margin-bottom: 24px;
-  color: #333;
 }
 
-form label {
+.login-container h1 {
+  margin-bottom: 20px;
+  font-size: 26px;
+  color: #ffcc00;
+}
+
+.login-container label {
   display: block;
-  margin-bottom: 8px;
+  text-align: left;
+  margin-top: 10px;
   font-size: 14px;
-  color: #555;
 }
 
-form input {
+.login-container input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border-radius: 8px;
+  border: none;
+  font-size: 14px;
+}
+
+.login-container button {
+  margin-top: 20px;
   width: 100%;
   padding: 10px;
-  margin-bottom: 16px;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  font-size: 14px;
-}
-
-form button {
-  width: 100%;
-  padding: 12px;
-  background-color: #4e4376;
-  color: white;
+  background-color: #ffcc00;
   border: none;
   border-radius: 8px;
   font-size: 16px;
+  font-weight: bold;
   cursor: pointer;
-  transition: background 0.3s ease;
+  transition: background-color 0.3s ease;
 }
 
-form button:hover {
-  background-color: #2b5876;
+.login-container button:hover {
+  background-color: #e6b800;
+}
+
+.info {
+  margin-top: 20px;
+  font-size: 13px;
+  color: #ccc;
+}
+
+.info a {
+  color: #fff;
+  text-decoration: underline;
 }
